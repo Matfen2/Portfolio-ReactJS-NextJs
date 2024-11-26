@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "icon": "/picts/target.png",
+    "capacitie": "Esprit Créatif",
+    "details": "J’adore tester de nouvelles idées, que ce soit en termes de fonctionnalités ou de design, comme en témoignent mes projets sur ce portfolio.",
+    "listCapacities": ["Créativité", "Innovation", "Design"]
+  },
+  {
+    "id": "2",
+    "icon": "/picts/headphones.png",
+    "capacitie": "Relation clientèle",
+    "details": "Capable d’écouter les besoins clients et de proposer des solutions adaptées pour améliorer la visibilité et l’impact de leurs sites.",
+    "listCapacities": ["Communication", "Écoute", "Adaptabilité"]
+  },
+  {
+    "id": "3",
+    "icon": "/picts/start-up.png",
+    "capacitie": "Polyvalence",
+    "details": "Grâce à mon expérience dans le cinéma, je m’adapte facilement à divers contextes et environnements.",
+    "listCapacities": ["Flexibilité", "Rapidité d'apprentissage", "Esprit d'équipe"]
+  }
+]
