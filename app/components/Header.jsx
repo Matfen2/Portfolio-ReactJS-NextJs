@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Offcanvas from "../containers/Offcanvas";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,14 +24,13 @@ const Header = () => {
   return (
     <>
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "py-3" : "py-5"}`} style={{ backgroundColor: scrolled ? "var(--text)" : "transparent" }}>
-        {/* Desktop Navbar */}
-        <nav className="flex justify-center items-center mx-auto border border-border py-3 px-4 rounded-full bg-transparent max-w-2xl"
+        <nav className="flex justify-center items-center mx-auto border border-border py-3 px-4 rounded-full bg-transparent max-w-lg md:max-w-3xl sm:max-w-xl"
           style={{ border: "2px solid var(--border)" }}>
-          <ul className="flex flex-wrap md:space-x-8 space-y-4 md:space-y-0 justify-center">
+          <ul className="flex flex-wrap md:space-x-12 space-x-6 justify-center">
             <li>
               <button
-                className="text-2xl tracking-wide transition-all duration-300 hover:scale-105"
-                style={{ color: scrolled ? "var(--background)" : "var(--text)" }}
+                className="text-md font-semibold md:text-2xl sm:text-xl tracking-wide transition-all duration-300 hover:scale-105"
+                style={{ color: scrolled ? "var(--background)" : "var(--text)", fontFamily: "Honor" }}
                 onClick={() => scrollToSection("about-section")}
               >
                 A PROPOS DE MOI
@@ -40,8 +38,8 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="text-2xl tracking-wide transition-all duration-300 hover:scale-105"
-                style={{ color: scrolled ? "var(--background)" : "var(--text)" }}
+                className="text-md font-semibold md:text-2xl sm:text-xl tracking-wide transition-all duration-300 hover:scale-105"
+                style={{ color: scrolled ? "var(--background)" : "var(--text)", fontFamily: "Honor" }}
                 onClick={() => scrollToSection("capacities-section")}
               >
                 CAPACITES
@@ -49,8 +47,8 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="text-2xl tracking-wide transition-all duration-300 hover:scale-105"
-                style={{ color: scrolled ? "var(--background)" : "var(--text)" }}
+                className="text-md font-semibold md:text-2xl sm:text-xl tracking-wide transition-all duration-300 hover:scale-105"
+                style={{ color: scrolled ? "var(--background)" : "var(--text)", fontFamily: "Honor" }}
                 onClick={() => scrollToSection("projects-section")}
               >
                 PROJETS
@@ -58,8 +56,8 @@ const Header = () => {
             </li>
             <li>
               <button
-                className="text-2xl tracking-wide transition-all duration-300 hover:scale-105"
-                style={{ color: scrolled ? "var(--background)" : "var(--text)" }}
+                className="text-md font-semibold md:text-2xl sm:text-xl tracking-wide transition-all duration-300 hover:scale-105"
+                style={{ color: scrolled ? "var(--background)" : "var(--text)", fontFamily: "Honor" }}
                 onClick={() => scrollToSection("contact-section")}
               >
                 CONTACT
@@ -67,21 +65,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden fixed top-4 right-4 bg-transparent text-text text-2xl border-none cursor-pointer"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <i className="fa-solid fa-bars"></i>
-        </button>
       </header>
-
-      {/* Offcanvas for Mobile */}
-      <Offcanvas scrollToSection={scrollToSection} />
     </>
   );
 };

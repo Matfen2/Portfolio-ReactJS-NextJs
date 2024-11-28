@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Kasa",
+    "description": "Site de logements",
+    "pict": "/picts/logementsOne.png",
+    "synopsis": "Kasa est une plateforme de location immobilière offrant une expérience utilisateur fluide et moderne.",
+    "firstFramework": "/picts/reactJs.png",
+    "secondFramework": "/picts/sass.png",
+    "hrefSite": "https://kasa-pi-nine.vercel.app",
+    "hrefGithub": "https://github.com/Matfen2/Kasa"
+  },
+  {
+    "id": 2,
+    "title": "Arkane Studio",
+    "description": "Clone du site officiel de Arkane Studio",
+    "pict": "/picts/arkaneOne.png",
+    "synopsis": "Arkane Studio est un site offrant des informations sur le studio de développement, connu pour son expertise en jeux immersifs.",
+    "firstFramework": "/picts/reactJs.png",
+    "secondFramework": "/picts/sass.png",
+    "hrefSite": "https://arkane-studios.vercel.app",
+    "hrefGithub": "https://github.com/Matfen2/arkane-studios"
+  },
+  {
+    "id": 3,
+    "title": "Dishonored",
+    "description": "Site personnel de Dishonored",
+    "pict": "/picts/dishonoredOne.png",
+    "synopsis": "Dishonored est un site dédié à une série de jeux vidéo immersive, mettant en avant la liberté de choix du joueur.",
+    "firstFramework": "/picts/nextJs.png",
+    "secondFramework": "/picts/tailwindCSS2.png",
+    "hrefSite": "https://dishonored.vercel.app",
+    "hrefGithub": "https://github.com/Matfen2/dishonored"
+  }
+]

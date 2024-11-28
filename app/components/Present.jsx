@@ -3,16 +3,30 @@ import React from 'react'
 const Present = () => {
   return (
     <div className="presentation flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat text-white text-center">
-      <h2 className="text-6xl space-x-3 font-bold tracking-wider" style={{ fontFamily: "Vipnagorgialla", color: "var(--text)" }}>
-        Mathieu FENOUIL
-      </h2>
-      <h3 className="text-5xl font-light uppercase mt-4" style={{ fontFamily: "Techovier", color: "var(--text)" }}>
-        Développeur Front-End
-      </h3>
-      <p className="text-lg text-center max-w-4xl mx-auto mt-4" style={{
-      fontFamily: "Techovier", fontSize: "1.8em", lineHeight: "1.8em", letterSpacing: "0.05em", color: "var(--text)" }}>
-        Passionné par le développement web, notamment la partie créative.
-      </p>
+      <h2
+  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider text-center"
+  style={{ fontFamily: "Vipnagorgialla", color: "var(--text)" }}
+>
+  Mathieu FENOUIL
+</h2>
+<h3
+  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light uppercase mt-4 text-center"
+  style={{ fontFamily: "Techovier", color: "var(--text)" }}
+>
+  Développeur Front-End
+</h3>
+<p
+  className="text-base sm:text-lg md:text-xl lg:text-2xl text-center max-w-md sm:max-w-xl md:max-w-3xl mx-auto mt-4 leading-relaxed tracking-wide"
+  style={{
+    fontFamily: "Techovier",
+    lineHeight: "1.8em",
+    letterSpacing: "0.05em",
+    color: "var(--text)",
+  }}
+>
+  Passionné par le développement web, notamment la partie créative.
+</p>
+
 
       <button
         type="button"
