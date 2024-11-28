@@ -35,7 +35,7 @@ const Present = () => {
         style={{ backgroundColor: 'var(--text)', border: '1px solid var(--border)' }}
       >
         <a
-          href="/CV%20Mathieu%20FENOUIL.pdf"
+          href="/picts/CV%20Mathieu%20FENOUIL.pdf"
           download="CV Mathieu FENOUIL"
           className="no-underline italic"
           style={{ fontFamily: "Vipnagorgialla", color: 'var(--background)' }}
