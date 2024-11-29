@@ -35,7 +35,7 @@ const About = () => {
         {/* Text Section */}
         <div className="w-full lg:w-2/3 space-y-6">
           <p
-            className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-left px-4 sm:px-8"
             style={{
               fontFamily: "Honor",
               color: "var(--text)",
@@ -49,7 +49,7 @@ const About = () => {
             projets innovants et immersifs, adaptés aux besoins des entreprises.
           </p>
           <p
-            className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-left px-4 sm:px-8"
             style={{
               fontFamily: "Honor",
               color: "var(--text)",

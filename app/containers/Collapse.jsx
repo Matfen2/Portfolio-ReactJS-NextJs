@@ -52,7 +52,7 @@ const Collapse = ({
             <p className="mt-4 font-semibold text-center md:text-left md:text-lg" style={{ fontFamily: "Honor",
             color: "var(--text)", letterSpacing: "3px"}}>{synopsis}</p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-between mt-5 gap-4">
+            <div className="flex flex-col lg:flex-col sm:flex-row items-center justify-between mt-5 gap-4">
               {/* Images des frameworks */}
               <div className="flex gap-4 items-center">
                 <Image

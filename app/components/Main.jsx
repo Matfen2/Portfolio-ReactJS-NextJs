@@ -5,11 +5,12 @@ import About from './About'
 import Capacities from './Capacities'
 import Projects from './Projects'
 import Contact from './Contact'
+import Navbar from './Navbar'
 
 const Main = () => {
   return (
     <div>
-      <Header />
+      <Navbar />
       <Present />
       <About />
       <Capacities />
