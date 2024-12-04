@@ -5,18 +5,9 @@ import { MdWeb } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineArrowUp as SiArrowUp } from "react-icons/ai";
 
-const Collapse = ({
-  title,
-  description,
-  pict,
-  synopsis,
-  hrefSite,
-  hrefGithub,
-  firstFramework,
-  secondFramework,
-  active,
-  setActive,
-}) => {
+const Collapse = ({title, description, pict, synopsis, hrefSite, hrefGithub,
+  firstFramework, secondFramework, active, setActive}) => {
+  
   const isActive = active === title;
 
   const handleClick = () => {
