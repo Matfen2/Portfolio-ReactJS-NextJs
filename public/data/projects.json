@@ -23,13 +23,13 @@
   },
   {
     "id": 3,
-    "title": "Dishonored",
-    "description": "Site personnel de Dishonored",
-    "pict": "/picts/dishonoredOne.png",
-    "synopsis": "Dishonored est un site dédié à une série de jeux vidéo immersive, mettant en avant la liberté de choix du joueur.",
+    "title": "Steam Deck Oled",
+    "description": "Site personnel de la Steam Deck Oled",
+    "pict": "/picts/steamDeckOledPage.png",
+    "synopsis": "Création d'un site vitrine interactif et responsive dédié au Steam Deck OLED, mettant en avant ses caractéristiques techniques et fonctionnalités. Réalisé avec Next.js, Tailwind CSS et des animations dynamiques, le projet offre une navigation fluide et une expérience utilisateur optimisée sur tous les appareils. Ce site illustre ma maîtrise des technologies modernes pour concevoir des interfaces intuitives et attractives.",
     "firstFramework": "/picts/nextJs.png",
     "secondFramework": "/picts/tailwindCSS2.png",
-    "hrefSite": "https://dishonored.vercel.app",
-    "hrefGithub": "https://github.com/Matfen2/dishonored"
+    "hrefSite": "https://steam-deck-oled.netlify.app",
+    "hrefGithub": "https://github.com/Matfen2/steam-deck-oled"
   }
 ]
