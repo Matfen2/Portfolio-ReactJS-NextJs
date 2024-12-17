@@ -1,6 +1,4 @@
-import PropTypes from "prop-types";
-
-function Offcanvas({ scrollToSection }) {
+function Offcanvas() {
   return (
     <div
       className="fixed top-0 right-0 h-full w-64 bg-black text-text transform translate-x-full transition-transform md:hidden z-50"
@@ -26,7 +24,7 @@ function Offcanvas({ scrollToSection }) {
             <li>
               <button
                 className="text-lg font-custom tracking-wider hover:scale-110 transition-transform"
-                onClick={() => scrollToSection("about-section")}
+                href="#about-section"
               >
                 A PROPOS DE MOI
               </button>
@@ -34,7 +32,7 @@ function Offcanvas({ scrollToSection }) {
             <li>
               <button
                 className="text-lg font-custom tracking-wider hover:scale-110 transition-transform"
-                onClick={() => scrollToSection("projects-section")}
+                href="#projects-section"
               >
                 PROJETS
               </button>
@@ -42,7 +40,7 @@ function Offcanvas({ scrollToSection }) {
             <li>
               <button
                 className="text-lg font-custom tracking-wider hover:scale-110 transition-transform"
-                onClick={() => scrollToSection("capacities-section")}
+                href="#capacities-section"
               >
                 CAPACITES
               </button>
@@ -50,7 +48,7 @@ function Offcanvas({ scrollToSection }) {
             <li>
               <button
                 className="text-lg font-custom tracking-wider hover:scale-110 transition-transform"
-                onClick={() => scrollToSection("contact-section")}
+                href="contact-section"
               >
                 CONTACT
               </button>
@@ -61,9 +59,5 @@ function Offcanvas({ scrollToSection }) {
     </div>
   );
 }
-
-Offcanvas.propTypes = {
-  scrollToSection: PropTypes.func.isRequired,
-};
 
 export default Offcanvas;

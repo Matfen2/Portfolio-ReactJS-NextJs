@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import projects from "../../public/data/projects.json";
 import Collapse from "../containers/Collapse";
 
 const Projects = () => {
-  const [active, setActive] = useState(null);
-
   return (
     <div id="projects-section" className="flex flex-col items-center px-4 mb-8">
       <h2
@@ -32,8 +29,6 @@ const Projects = () => {
             secondFramework={project.secondFramework}
             hrefSite={project.hrefSite}
             hrefGithub={project.hrefGithub}
-            active={active}
-            setActive={setActive}
           />
         ))}
       </div>

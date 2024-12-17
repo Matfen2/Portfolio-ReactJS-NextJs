@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import phone from "../../public/picts/mobile.png";
-import home from "../../public/picts/home.png";
 import letter from "../../public/picts/letter.png";
 import github from "../../public/picts/github.png";
 import facebook from "../../public/picts/facebook.png";

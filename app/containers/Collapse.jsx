@@ -1,32 +1,31 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { MdWeb } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineArrowUp as SiArrowUp } from "react-icons/ai";
 
-const Collapse = ({title, description, pict, synopsis, hrefSite, hrefGithub,
-  firstFramework, secondFramework, active, setActive}) => {
+const Collapse = ({ title, description, pict, synopsis, hrefSite, hrefGithub, firstFramework, secondFramework }) => {
   
-  const isActive = active === title;
+  const [isActive, setIsActive] = useState(false);
 
-  const handleClick = () => {
-    setActive(isActive ? null : title);
+  const handleClick = (value) => {
+    setIsActive(value);
   };
 
   return (
     <div
       className="relative flex flex-col rounded-md overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out"
-      onClick={handleClick}
-      aria-expanded={isActive}
+      onClick={() => handleClick(!isActive)}
+      role="button"
     >
-      {/* Image principale */}
       <Image
         src={pict}
         alt={title}
         width={1000}
         height={250}
-        className="w-full h-48 sm:h-96  transition-transform duration-300 ease-in-out hover:scale-105"
+        className="w-full h-48 sm:h-96 transition-transform duration-300 ease-in-out hover:scale-105"
       />
 
       {/* Vue détaillée */}
@@ -37,14 +36,26 @@ const Collapse = ({title, description, pict, synopsis, hrefSite, hrefGithub,
       >
         {isActive && (
           <div className="flex flex-col p-4 bg-[var(--background)] text-[var(--text)]">
-            <h2 className="text-4xl md:text-3xl text-center md:text-left" style={{ fontFamily: "Vipnagorgialla", letterSpacing: "4px" }}>{title}</h2>
-            <p className="text-lg md:text-base text-center md:text-left" style={{ fontFamily: "Honor",
-            color: "var(--text)", letterSpacing: "3px"}}>{description}</p>
-            <p className="mt-4 font-semibold text-center md:text-left md:text-lg" style={{ fontFamily: "Honor",
-            color: "var(--text)", letterSpacing: "3px"}}>{synopsis}</p>
+            <h2
+              className="text-4xl md:text-3xl text-center md:text-left"
+              style={{ fontFamily: "Vipnagorgialla", letterSpacing: "4px" }}
+            >
+              {title}
+            </h2>
+            <p
+              className="text-lg md:text-base text-center md:text-left"
+              style={{ fontFamily: "Honor", letterSpacing: "3px" }}
+            >
+              {description}
+            </p>
+            <p
+              className="mt-4 font-semibold text-center md:text-left md:text-lg"
+              style={{ fontFamily: "Honor", letterSpacing: "3px" }}
+            >
+              {synopsis}
+            </p>
 
-            <div className="flex flex-col lg:flex-col sm:flex-row items-center justify-between mt-5 gap-4">
-              {/* Images des frameworks */}
+            <div className="flex flex-col sm:flex-row items-center justify-between mt-5 gap-4">
               <div className="flex gap-4 items-center">
                 <Image
                   src={firstFramework}
@@ -61,26 +72,31 @@ const Collapse = ({title, description, pict, synopsis, hrefSite, hrefGithub,
                   className="object-contain"
                 />
               </div>
-
-              {/* Liens vers le site et le code source */}
-              <div className="flex flex-row md:flex-row items-center gap-4">
-                <a href={hrefSite} target="_blank" rel="noopener noreferrer"
-                className="text-4xl px-4 py-2 text-white rounded-md transition-all duration-150 hover:scale-125" style={{ color: "var(--text)" }}>
+              <div className="flex flex-row items-center gap-4">
+                <a
+                  href={hrefSite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-4xl hover:scale-125 transition-all duration-150"
+                >
                   <MdWeb />
                 </a>
-                <a href={hrefGithub} target="_blank" rel="noopener noreferrer"
-                className="text-4xl px-4 py-2 text-white rounded-md transition-all duration-150 hover:scale-125" style={{ color: "var(--text)" }}>
+                <a
+                  href={hrefGithub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-4xl hover:scale-125 transition-all duration-150"
+                >
                   <FaGithub />
                 </a>
               </div>
             </div>
 
-            {/* Bouton pour masquer les informations */}
             <div
-              className="flex items-center justify-center mt-4 text-sm text-blue-400 cursor-pointer transition-all duration-150 hover:scale-125" style={{ color: "var(--text)" }}
-              onClick={() => setActive(null)}
+              className="flex items-center justify-center mt-4 text-blue-400 cursor-pointer transition-all duration-150 hover:scale-125"
+              onClick={() => handleClick(false)}
             >
-              <SiArrowUp className="mr-2" style={{ color: "var(--text)" }} /> Masquer les infos
+              <SiArrowUp className="mr-2" /> Masquer les infos
             </div>
           </div>
         )}

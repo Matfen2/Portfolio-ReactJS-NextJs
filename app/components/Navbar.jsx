@@ -6,6 +6,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const openClick = (value) => {
+    setIsOpen(value);
+  };
+
   return (
     <nav className="bg-[var(--background)] text-[var(--text)] border-[var(--border)] fixed w-full top-0 z-50 shadow-md border-b-2" >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -19,7 +23,7 @@ const Navbar = () => {
 
         {/* Menu burger */}
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => openClick(!isOpen)}
           className="md:hidden text-2xl focus:outline-none"
         >
           {isOpen ? <FaTimes /> : <FaBars />}
