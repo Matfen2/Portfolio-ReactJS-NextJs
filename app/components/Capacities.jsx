@@ -33,6 +33,7 @@ const Capacities = () => {
           <Image
             src={nextJsLogo}
             alt="Next.js Logo"
+            loading="lazy"
             className="object-contain"
             width={150}
             height={80}
@@ -42,6 +43,7 @@ const Capacities = () => {
           <Image
             src={tailwindCSSLogo}
             alt="Tailwind CSS Logo"
+            loading="lazy"
             className="object-contain"
             width={200}
             height={80}
@@ -51,6 +53,7 @@ const Capacities = () => {
           <Image
             src={nodeJsLogo}
             alt="Node.js Logo"
+            loading="lazy"
             className="object-contain"
             width={150}
             height={80}

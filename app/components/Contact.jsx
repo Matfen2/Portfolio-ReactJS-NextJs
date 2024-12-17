@@ -42,6 +42,7 @@ function Contact() {
           <Image
             src={phone}
             alt="Phone"
+            loading="lazy"
             className="w-[50px] h-[50px]"
             width={50}
             height={50}
@@ -63,6 +64,7 @@ function Contact() {
           <Image
             src={letter}
             alt="Email"
+            loading="lazy"
             className="w-[50px] h-[50px]"
             width={50}
             height={50}
@@ -90,6 +92,7 @@ function Contact() {
             <Image
               src={facebook}
               alt="Facebook"
+              loading="lazy"
               className="w-[40px] h-[40px]"
               width={40}
               height={40}
@@ -104,6 +107,7 @@ function Contact() {
             <Image
               src={linkedin}
               alt="LinkedIn"
+              loading="lazy"
               className="w-[40px] h-[40px]"
               width={40}
               height={40}
@@ -118,6 +122,7 @@ function Contact() {
             <Image
               src={github}
               alt="GitHub"
+              loading="lazy"
               className="w-[40px] h-[40px]"
               width={40}
               height={40}

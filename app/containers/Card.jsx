@@ -18,6 +18,7 @@ const Card = ({ icon, capacitie, details }) => {
         <Image
           src={icon}
           alt={capacitie}
+          loading="lazy"
           className="object-contain"
           width={70}
           height={50}

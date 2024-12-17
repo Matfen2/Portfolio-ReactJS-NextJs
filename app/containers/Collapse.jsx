@@ -25,6 +25,8 @@ const Collapse = ({ title, description, pict, synopsis, hrefSite, hrefGithub, fi
         alt={title}
         width={1000}
         height={250}
+        layout="responsive"
+        loading="lazy"
         className="w-full h-48 sm:h-96 transition-transform duration-300 ease-in-out hover:scale-105"
       />
 
@@ -62,6 +64,7 @@ const Collapse = ({ title, description, pict, synopsis, hrefSite, hrefGithub, fi
                   alt="Framework 1"
                   width={80}
                   height={60}
+                  loading="lazy"
                   className="object-contain"
                 />
                 <Image
@@ -69,6 +72,7 @@ const Collapse = ({ title, description, pict, synopsis, hrefSite, hrefGithub, fi
                   alt="Framework 2"
                   width={80}
                   height={60}
+                  loading="lazy"
                   className="object-contain"
                 />
               </div>

@@ -27,6 +27,7 @@ const About = () => {
           <Image
             src={PhotoMe}
             alt="Profile"
+            loading="lazy"
             style={{ border: "2px solid var(--border)", objectFit: "cover" }}
             className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full mx-auto"
           />
