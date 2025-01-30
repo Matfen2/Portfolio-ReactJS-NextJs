@@ -11,7 +11,7 @@ const Present = () => {
       <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-center max-w-md sm:max-w-xl md:max-w-3xl mx-auto mt-4 leading-relaxed tracking-wide" style={{ fontFamily: "Techovier", lineHeight: "1.8em", letterSpacing: "0.05em", color: "var(--text)" }}>Passionné par le développement web, notamment la partie créative.</p>
 
       <button type="button" id="btnCV" className="mt-2 px-2 py-2 border rounded-full transition-all duration-150 text-lg uppercase tracking-wide hover:scale-110" style={{ backgroundColor: 'var(--text)', border: '1px solid var(--border)' }}>
-        <a href="/picts/CV%20Mathieu%20FENOUIL.pdf" download="CV Mathieu FENOUIL"
+        <a href="/picts/CV%20Mathieu%20FENOUIL%20Développeur%20Web.pdf" download="CV Mathieu FENOUIL"
         className="no-underline italic flex flex-row items-center gap-2" style={{ fontFamily: "Vipnagorgialla", color: 'var(--background)' }}>
           Mon CV<FaDownload />
         </a>
